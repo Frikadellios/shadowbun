@@ -1,0 +1,82 @@
+---
+// Import the global.css file here so that it is included on
+// all pages through the use of the <BaseHead /> component.
+import '@/styles/globals.css'
+import { ViewTransitions } from 'astro:transitions'
+
+interface Props {
+  title: string
+  description: string
+  image?: string
+}
+
+const { title, description, image = '/favicon.svg' } = Astro.props
+---
+
+<!-- Global Metadata -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+<meta name="generator" content={Astro.generator} />
+
+<!-- Font preloads -->
+<link
+    rel="preload"
+    href="/fonts/inter.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin
+/>
+
+
+<!-- Primary Meta Tags -->
+<title>{title}</title>
+<meta name="title" content={title} />
+<meta name="description" content={description} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content={Astro.url} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={new URL(image, Astro.url)} />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content={Astro.url} />
+<meta property="twitter:title" content={title} />
+<meta property="twitter:description" content={description} />
+<meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<!-- Preline  -->
+
+<script src="https://cdn.jsdelivr.net/npm/preline/dist/preline.min.js"></script>
+<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Discover the difference that a professionally crafted website can make for your business.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script is:inline src="./assets/vendor/preline/dist/preline.js"></script>
+<link rel="stylesheet" href="https://preline.co/assets/css/main.min.css">
+
+
+<!-- Global Scripts -->
+<script is:inline src="/js/theme.js"></script>
+<script is:inline src="/js/scroll.js"></script>
+<script is:inline src="/js/animate.js"></script>
+
+<!-- <ViewTransitions  /> -->
+
+<script>
+    import type { TransitionBeforeSwapEvent } from 'astro:transitions/client'
+    document.addEventListener('astro:before-swap', (e) =>
+        [
+            ...(e as TransitionBeforeSwapEvent).newDocument.head.querySelectorAll(
+                'link[as="font"]'
+            )
+        ].forEach((link) => link.remove())
+    )
+</script>
+
+
+<ViewTransitions />

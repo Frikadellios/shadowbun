@@ -1,0 +1,18 @@
+---
+import ContainerDot from '@/components/layout/containerDot.astro'
+import { BackgroundBeamsWithCollisionDemo } from '@/components/react/BackgroundBeamsWithCollisionCta'
+import { CardDemo } from '@/components/react/CardMotion'
+import { FeaturesSectionDemoGlobe } from '@/components/react/FeaturesWithGlobe'
+import { FeaturesSectionDemo } from '@/components/react/SimpleWithCard'
+import { FeaturesSectionDemoHover } from '@/components/react/SimpleWithHover'
+import Layout from '@/layouts/Layout.astro'
+---
+
+<Layout title="Homepage" description="Homepage description">
+    <BackgroundBeamsWithCollisionDemo client:visible />
+    <CardDemo client:visible />
+    <FeaturesSectionDemoGlobe client:visible />
+    <FeaturesSectionDemo client:visible />
+    <FeaturesSectionDemoHover client:visible />
+    <ContainerDot/>
+</Layout>

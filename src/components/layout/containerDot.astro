@@ -1,0 +1,10 @@
+---
+import BackgroundDots from './background-dots'
+
+const { class: className } = Astro.props
+---
+
+<div class:list={['h-auto w-auto rounded-tl-3xl rounded-tr-3xl bg-trancperent', className]}>
+    <BackgroundDots client:visible />
+    <slot />
+</div>
