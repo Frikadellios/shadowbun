@@ -2,7 +2,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/shadowbun">
-    <img src="public/og.png" alt="Logo" width="640" height="320">
+    <img src="public/og.png" alt="Logo" width="1280" height="640">
   </a>
 
   <h3 align="center">ShadowBun</h3>
@@ -50,9 +50,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-## 🚀  **Welcome to [Your Project Name]** 🚀
+## 🚀  **Welcome to ShadowBun** 🚀
 
 This repository contains... [ Briefly describe your project in 1-2 sentences. ]
 
@@ -208,7 +206,6 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [ui.shadcn.com]: https://img.shields.io/badge/shadcn%2Fui-000000?style=for-the-badge&logo=shadcnui&logoColor=white

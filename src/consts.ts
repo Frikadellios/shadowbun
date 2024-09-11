@@ -18,21 +18,16 @@ export const SOCIALS: Socials = [
   {
     NAME: 'Github',
     ICON: 'github',
-    TEXT: 'DevOpSick',
+    TEXT: 'GitHub',
     HREF: 'https://github.com/Frikadellios'
   },
   {
     NAME: 'Linkedin',
     ICON: 'linkedin',
-    TEXT: 'DevOpSick',
-    HREF: 'https://linkedin.com/Frikadellios'
+    TEXT: 'Linkedin',
+    HREF: 'https://linkedin.com'
   },
-  {
-    NAME: 'LinkedIn',
-    ICON: 'linkedin',
-    TEXT: 'markhorn-dev',
-    HREF: 'https://www.linkedin.com/in/markhorn-dev/'
-  },
+
   {
     NAME: 'Twitter',
     ICON: 'twitter-x',

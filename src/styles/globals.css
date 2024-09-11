@@ -24,6 +24,7 @@
   --color-black: oklch(0% 0 0);
   --color-white: oklch(100% 0 0);
   --color-chiter: oklch(23.57% 0.008 274.61);
+  --color-foreground-elements: oklch(82.72% 0.105 227.99);
   /* Shadcn - purple-black */
   --color-background: oklch(10.69% 0.019 318.2);
   --color-background-brown: oklch(14.67% 0.004 49.31);
