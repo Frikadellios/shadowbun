@@ -15,6 +15,7 @@ type Props = {
   bodyClass?: string
 }
 
+import NavigationSection from '@/components/react/Navigation'
 import ViewTransitions from 'astro/components/ViewTransitions.astro'
 
 const { title, description, mainClass, bodyClass } = Astro.props as Props
@@ -38,6 +39,7 @@ const { title, description, mainClass, bodyClass } = Astro.props as Props
 		<ProviderAnimations />
 	</head>
 	<body class={cn('flex flex-col font-sans antialiased min-h-screen', bodyClass)}>
+        <NavigationSection client:visible />
 		<Container>
 			<main class={cn(mainClass)}>
 				<slot />
