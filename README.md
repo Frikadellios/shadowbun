@@ -56,9 +56,9 @@ This repository contains... [ Briefly describe your project in 1-2 sentences. ]
 
 **Here's what you'll find:**
 
-* ✨  [Feature 1]
-* 🧰  [Feature 2]
-* 🤖  [Feature 3]
+* ✨  Tailwind CSS with Lightning CSS support
+* 🧰  React components with Shadcn
+* 🤖  Cloudflare Adapter with Wrangler tools
 
 **Ready to get started?**
 
@@ -69,7 +69,7 @@ This repository contains... [ Briefly describe your project in 1-2 sentences. ]
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+This section should list any major frameworks/libraries used to run this project.
 
 * [![Astro][Astro.build]][Astro-url]
 * [![React][React.js]][React-url]
