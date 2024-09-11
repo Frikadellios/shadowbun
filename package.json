@@ -4,7 +4,17 @@
   "version": "1.0.1",
   "packageManager": "bun@1.1.26",
   "private": true,
-  "keywords": ["template", "biomejs", "bun", "typescript", "tailwindcss", "astrojs", "react", "shadcn", "aceternity-ui"],
+  "keywords": [
+    "template",
+    "biomejs",
+    "bun",
+    "typescript",
+    "tailwindcss",
+    "astrojs",
+    "react",
+    "shadcn",
+    "aceternity-ui"
+  ],
   "author": "Hrihorii Ilin <devopsick@pm.me>",
   "description": "To install dependencies: bun install",
   "repository": {

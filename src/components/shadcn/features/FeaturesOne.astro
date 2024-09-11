@@ -1,0 +1,50 @@
+---
+import { Badge } from '@/components/ui/badge'
+import { Check } from 'lucide-react'
+
+---
+<container class="mx-auto my-auto">
+  <div class="w-full py-20 lg:py-40">
+    <div class="container mx-auto">
+      <div class="grid border rounded-lg container py-8 grid-cols-1 gap-8 items-center lg:grid-cols-2">
+        <div class="flex gap-10 flex-col">
+          <div class="flex gap-4 flex-col">
+            <div>
+              <Badge variant="outline">Platform</Badge>
+            </div>
+            <div class="flex gap-2 flex-col">
+              <h2 class="text-3xl lg:text-5xl tracking-tighter max-w-xl text-left font-regular">Something new!</h2>
+              <p class="text-lg leading-relaxed tracking-tight text-muted-foreground max-w-xl text-left">
+                Managing a small business today is already tough.
+              </p>
+            </div>
+          </div>
+          <div class="grid lg:pl-6 grid-cols-1 sm:grid-cols-3 items-start lg:grid-cols-1 gap-6">
+            <div class="flex flex-row gap-6 items-start">
+              <Check className="w-4 h-4 mt-2 text-primary" />
+              <div class="flex flex-col gap-1">
+                <p>Easy to use</p>
+                <p class="text-muted-foreground text-sm">We&apos;ve made it easy to use and understand.</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-6 items-start">
+              <Check className="w-4 h-4 mt-2 text-primary" />
+              <div class="flex flex-col gap-1">
+                <p>Fast and reliable</p>
+                <p class="text-muted-foreground text-sm">We&apos;ve made it fast and reliable.</p>
+              </div>
+            </div>
+            <div class="flex flex-row gap-6 items-start">
+              <Check className="w-4 h-4 mt-2 text-primary" />
+              <div class="flex flex-col gap-1">
+                <p>Beautiful and modern</p>
+                <p class="text-muted-foreground text-sm">We&apos;ve made it beautiful and modern.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-muted rounded-md aspect-square" />
+      </div>
+    </div>
+  </div>
+</container>
